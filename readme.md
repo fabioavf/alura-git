@@ -24,6 +24,7 @@ Agora, esse projeto foi readaptado para se tornar um tema de WordPress, na medid
 - CSS
 - JavaScript
 - Framework Bootstrap
+- Wordpress
 
 ## 📁 Como utilizar esse tema?
 
