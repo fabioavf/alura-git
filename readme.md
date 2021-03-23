@@ -3,7 +3,7 @@
 </h1>
 
 <h1 align="center">
-    <img src="https://i.imgur.com/4p5cwBR.gif">
+    <img src="./assets/img/site.gif">
 </h1>
 
 # Índice <!-- omit in toc -->
