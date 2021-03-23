@@ -32,3 +32,5 @@ Para utilizar esse tema, basta utilizar o comando a seguir para clonar o reposit
 ```bash
     $ git clone http://github.com/fabioavf/ghibli.git
 ```
+
+Recomenda-se a utilização do plugin [Post Types Order](https://wordpress.org/plugins/post-types-order/) para ordenar os filmes como desejar. Para adicionar um filme, basta adicionar um post com o ID do filme ([The Movie Database](https://www.themoviedb.org/)) no Advanced Custom Field.
