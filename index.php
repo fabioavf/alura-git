@@ -33,11 +33,10 @@
             </div>
         </div>
 
-        <div class="d-none">
+        <div id="movieIdContainer" class="d-none">
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-                    <?php the_title(); ?>
-                    <?php the_content(); ?>
+                    <span id="movieId"><?php the_field('movie_id'); ?></span>
 
                 <?php endwhile;
             else : ?>

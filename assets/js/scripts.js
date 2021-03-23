@@ -6,32 +6,41 @@ const apiKey = '?api_key=76843f28096fdd8dcc5ff3cfb298c938&language=en-US';
 const getMovie = 'https://api.themoviedb.org/3/movie/';
 const getImage = 'https://image.tmdb.org/t/p/original/';
 
-var movieList = {
-    'Castle in the Sky': 10515,
-    'Grave of the Fireflies': 12477,
-    'My Neighbor Totoro': 8392,
-    'Kiki\'s Delivery Service': 16859,
-    'Only Yesterday': 15080,
-    'Porco Rosso': 11621,
-    'Ocean Waves': 21057,
-    'Pom Poko': 15283,
-    'Whisper of the Heart': 37797,
-    'Princess Mononoke': 128,
-    'My Neighbours the Yamadas': 16198,
-    'Spirited Away': 129,
-    'The Cat Returns': 15370,
-    'Howl\'s Moving Castle': 4935,
-    'Tales from Earthsea': 37933,
-    'Ponyo': 12429,
-    'The Secret World of Arrietty': 51739,
-    'From Up on Poppy Hill': 83389,
-    'The Wind Rises': 149870,
-    'The Tale of the Princess Kaguya': 149871,
-    'When Marnie Was There': 242828,
-    'Earwig and the Witch': 683127
-};
+// var movieList = {
+//     'Castle in the Sky': 10515,
+//     'Grave of the Fireflies': 12477,
+//     'My Neighbor Totoro': 8392,
+//     'Kiki\'s Delivery Service': 16859,
+//     'Only Yesterday': 15080,
+//     'Porco Rosso': 11621,
+//     'Ocean Waves': 21057,
+//     'Pom Poko': 15283,
+//     'Whisper of the Heart': 37797,
+//     'Princess Mononoke': 128,
+//     'My Neighbours the Yamadas': 16198,
+//     'Spirited Away': 129,
+//     'The Cat Returns': 15370,
+//     'Howl\'s Moving Castle': 4935,
+//     'Tales from Earthsea': 37933,
+//     'Ponyo': 12429,
+//     'The Secret World of Arrietty': 51739,
+//     'From Up on Poppy Hill': 83389,
+//     'The Wind Rises': 149870,
+//     'The Tale of the Princess Kaguya': 149871,
+//     'When Marnie Was There': 242828,
+//     'Earwig and the Witch': 683127
+// };
 
-var movieIdList = [683127, 242828, 149871, 149870, 83389, 51739, 12429, 37933, 4935, 15370, 129, 16198, 128, 37797, 15283, 21057, 11621, 15080, 16859, 8392, 12477, 10515];
+// var movieIdList = [683127, 242828, 149871, 149870, 83389, 51739, 12429, 37933, 4935, 15370, 129, 16198, 128, 37797, 15283, 21057, 11621, 15080, 16859, 8392, 12477, 10515];
+
+var movieIdContainer = document.querySelector('#movieIdContainer');
+var movies = movieIdContainer.querySelectorAll('#movieId');
+
+var movieIdList = [];
+
+for (var i = 0; i < movies.length; i++) {
+    movieIdList[i] = movies[i].innerText;
+}
 
 var carouselActive = false;
 
