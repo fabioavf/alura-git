@@ -27,7 +27,7 @@
                         <h2><?php bloginfo('name'); ?></h2>
                     </div>
                     <div class="col-12 about-text">
-                        <?php echo get_field('studio_description'); ?>
+                        <p><?php the_field('studio_description', 21); ?></p>
                     </div>
                 </div>
             </div>
